@@ -25,37 +25,37 @@
                         return moment()
                     }, dateEnd: function () {
                         return moment()
-                    }},
+                    }, id: 'today'},
                 {text: 'Yesterday', dateStart: function () {
                         return moment().subtract('days', 1)
                     }, dateEnd: function () {
                         return moment().subtract('days', 1)
-                    }},
+                    }, id: 'yesterday'},
                 {text: 'Last 7 Days', dateStart: function () {
                         return moment().subtract('days', 6)
                     }, dateEnd: function () {
                         return moment()
-                    }},
+                    }, id: 'last-7-days'},
                 {text: 'Last Week (Mo-Su)', dateStart: function () {
                         return moment().subtract('days', 7).isoWeekday(1)
                     }, dateEnd: function () {
                         return moment().subtract('days', 7).isoWeekday(7)
-                    }},
+                    }, id: 'last-week'},
                 {text: 'Month to Date', dateStart: function () {
                         return moment().startOf('month')
                     }, dateEnd: function () {
                         return moment()
-                    }},
+                    }, id: 'month-to-date'},
                 {text: 'Previous Month', dateStart: function () {
                         return moment().subtract('month', 1).startOf('month')
                     }, dateEnd: function () {
                         return moment().subtract('month', 1).endOf('month')
-                    }},
+                    }, id: 'previous-month'},
                 {text: 'Year to Date', dateStart: function () {
                         return moment().startOf('year')
                     }, dateEnd: function () {
                         return moment()
-                    }}
+                    }, id: 'year-to-date'}
             ],
             initialText: 'Select date range...', // placeholder text - shown when nothing is selected
             icon: 'ui-icon-triangle-1-s',
